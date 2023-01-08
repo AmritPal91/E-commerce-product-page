@@ -152,6 +152,7 @@ let btnNext =  document.querySelector('.btnNext');
  }
  function getCurrentImageNo (){
   let  imageNo =  displayLight.src.replace('https://amritpal91.github.io/E-commerce-product-page/images/image-product-','').replace('.jpg','');
+   console.log(displayLight.src);
 return imageNo;
  }
 
@@ -203,6 +204,7 @@ closeMenu.addEventListener("click",()=>{
  }
  function getCurrentImageNo (){
   let  imageNo =  display_mob.src.replace('https://amritpal91.github.io/E-commerce-product-page/images/image-product-','').replace('.jpg','');
+   console.log(display_mob.src);
   return imageNo;
  }
 
