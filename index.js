@@ -178,37 +178,37 @@ closeMenu.addEventListener("click",()=>{
  })
 
  let btnNextMob =  document.querySelector('.btnNextMob');
- btnNextMob.addEventListener("click", OnClickbtnNext)
+ btnNextMob.addEventListener("click", OnClickbtnNextMob)
 
  let btnPreviousMob =  document.querySelector('.btnPreviousMob');
- btnPreviousMob.addEventListener("click", OnClickbtnPrevious)
+ btnPreviousMob.addEventListener("click", OnClickbtnPreviousMob)
 
- function OnClickbtnNext (){
-  let imageNo = getCurrentImageNo ();
+ function OnClickbtnNextMob (){
+  let imageNo = getCurrentImageNoMob ();
   //console.log(imageNo);
   imageNo++;
   //console.log(imageNo)
   if(imageNo > 4){
     imageNo = 4;
   }
-  setdisplayLIghtImg (imageNo);
+  setdisplayImgMob (imageNo);
  }
- function OnClickbtnPrevious (){
-  let imageNo = getCurrentImageNo ();
+ function OnClickbtnPreviousMob (){
+  let imageNo = getCurrentImageNoMob ();
   //console.log(imageNo);
   imageNo--;
   if(imageNo < 1){
     imageNo = 1;
   }
-  setdisplayLIghtImg (imageNo);
+  setdisplayImgMob (imageNo);
  }
- function getCurrentImageNo (){
+ function getCurrentImageNoMob (){
   let  imageNo =  display_mob.src.replace('https://amritpal91.github.io/E-commerce-product-page/images/image-product-','').replace('.jpg','');
    console.log(display_mob.src);
   return imageNo;
  }
 
- function setdisplayLIghtImg (imageNo){
+ function setdisplayImgMob (imageNo){
   display_mob.src = `images/image-product-${imageNo}.jpg`;
    console.log(imageNo);
  }
