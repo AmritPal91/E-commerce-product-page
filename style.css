@@ -345,7 +345,7 @@ position:absolute;
 }
 
 /* Mobile View */
- @media screen and (min-width:375px) and (max-width:412px){
+ @media screen and (min-width:360px) and (max-width:412px){
   * {
       box-sizing : border-box;
       margin: 0;
