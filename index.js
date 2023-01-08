@@ -105,7 +105,6 @@ let onDelButtonClick = () => {
      checkout.classList.add('hidden');
      cartCount.classList.add('hidden');
   }
-   console.log(productsInCart);
 }
 
 // Light Gallery
@@ -152,7 +151,7 @@ let btnNext =  document.querySelector('.btnNext');
   setdisplayLIghtImg (imageNo);
  }
  function getCurrentImageNo (){
-  let  imageNo =  displayLight.src.replace('file:///E:/Web%20Development/ecommerce-product-page-main/images/image-product-','').replace('.jpg','');
+  let  imageNo =  displayLight.src.replace('images/image-product-','').replace('.jpg','');
   //imageNo++;
 //console.log(imageNo);
   // console.log(displayLight);
@@ -215,25 +214,17 @@ closeMenu.addEventListener("click",()=>{
   let imageNo = getCurrentImageNo ();
   //console.log(imageNo);
   imageNo--;
-  //console.log(imageNo)
   if(imageNo < 1){
     imageNo = 1;
   }
   setdisplayLIghtImg (imageNo);
  }
  function getCurrentImageNo (){
-  let  imageNo =  display_mob.src.replace('file:///E:/Web%20Development/ecommerce-product-page-main/images/image-product-','').replace('.jpg','');
-  //imageNo++;
-//console.log(imageNo);
-  // console.log(displayLight);
-  // //displayLight.src = displayLight.src.replace('images/image-product-','').replace('.jpg','')
-  // console.log(displayLight.src);
-return imageNo;
+  let  imageNo =  display_mob.src.replace('images/image-product-','').replace('.jpg','');
+  return imageNo;
  }
 
  function setdisplayLIghtImg (imageNo){
   display_mob.src = `images/image-product-${imageNo}.jpg`;
-  // thumbnailImages.forEach(img => img.classList.remove('active'));
-  // thumbnailImages[imageNo-1].classList.add('active');
-  console.log(imageNo);
+   console.log(imageNo);
  }
