@@ -151,12 +151,7 @@ let btnNext =  document.querySelector('.btnNext');
   setdisplayLIghtImg (imageNo);
  }
  function getCurrentImageNo (){
-  let  imageNo =  displayLight.src.replace('images/image-product-','').replace('.jpg','');
-  //imageNo++;
-//console.log(imageNo);
-  // console.log(displayLight);
-  // //displayLight.src = displayLight.src.replace('images/image-product-','').replace('.jpg','')
-  // console.log(displayLight.src);
+  let  imageNo =  displayLight.src.replace('https://amritpal91.github.io/E-commerce-product-page/images/image-product-','').replace('.jpg','');
 return imageNo;
  }
 
@@ -180,19 +175,6 @@ let closeMenu = document.querySelector('.close-menu');
 closeMenu.addEventListener("click",()=>{
   nav.classList.add('hidden');
  })
-
- document.addEventListener('DOMContentLoaded',init);
-
- function init (){
-  let query = window.matchMedia("(min-width:375px)and(max-width:412px)");
-
-  if (query.matches){
-    document.querySelector('h1').innerHTML="Autumn Limited Edition...";
-  }
-  else{
-    document.querySelector('h1').innerHTML="Fall Limited Edition Sneakers";
-  }
- }
 
  let btnNextMob =  document.querySelector('.btnNextMob');
  btnNextMob.addEventListener("click", OnClickbtnNext)
@@ -220,7 +202,7 @@ closeMenu.addEventListener("click",()=>{
   setdisplayLIghtImg (imageNo);
  }
  function getCurrentImageNo (){
-  let  imageNo =  display_mob.src.replace('images/image-product-','').replace('.jpg','');
+  let  imageNo =  display_mob.src.replace('https://amritpal91.github.io/E-commerce-product-page/images/image-product-','').replace('.jpg','');
   return imageNo;
  }
 
