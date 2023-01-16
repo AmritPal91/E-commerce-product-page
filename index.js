@@ -66,10 +66,18 @@ addtocart.addEventListener("click",()=>{
   productContainer.innerHTML = item;
  updateCartIcon();
 updateCheckout();
+  updateEmptyMsg();
    const delButton = document.querySelector('#delButton');
    delButton.addEventListener("click", onDelButtonClick);
 
 });
+
+let emptyMsg = document.querySelector('.emptyMsg');
+let updateEmptyMsg = () =>{
+  if (productsInCart > 0){
+  emptyMsg.classList.add('hidden');
+  }
+}
 
 let cartCount = document.querySelector('.cartIcon');
 let updateCartIcon = () =>{
@@ -104,6 +112,7 @@ let onDelButtonClick = () => {
      productContainer.innerHTML = ``;
      checkout.classList.add('hidden');
      cartCount.classList.add('hidden');
+    emptyMsg.classList.remove('hidden');
   }
 }
 
