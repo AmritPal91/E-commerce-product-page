@@ -132,23 +132,14 @@ main{
 .img-full-mob{
   display: none;
 }
-.img-full {
-    height: 63%;
-    width:65.8%;
-    margin: 95px auto 0 auto;
-    cursor: pointer;
-}
 .img-full img{
     width:100%;
-    height: 100%;
-
+    cursor: pointer;
 }
 .thumbnail{
-    height:12.6%;
-    width:65.8%;
     display:flex;
     justify-content:space-between;
-    margin: 30px auto;
+    margin: 30px 0 0 ;
 }
 .thumbnail img{
     height:90px;
@@ -165,16 +156,16 @@ main{
   opacity:0.3;
 }
 .prod_img{
-    margin-left:5%;
-    width:50%;
-
+    margin: 6% 7% 4% 13.5%;
+    height: 60%;
+    width:33%;
 }
 .prod_img img{
   border-radius: 15px;
 }
 .prod_info{
     height: 100%;
-    width:30%;
+    width:32%;
     text-align:left;
     margin-top:12%;
 }
@@ -204,6 +195,7 @@ h2 span{
 }
 del{
   color: hsl(220, 14%, 75%);
+   font-weight:600;
 }
 .counter{
   background: hsl(223, 64%, 98%);
@@ -211,7 +203,7 @@ del{
   width: 140px;
   height:43px;
   display:inline-block;
-  margin:35px 20px 0 0;
+  margin:35px 15px 0 0;
   text-align:center;
 }
 .plus{
@@ -243,6 +235,9 @@ del{
   text-align: center;
   height: 175px;
 }
+.hiddenMsg{
+  display: none;
+}
 .checkout{
   position:absolute;
   top: 73%;
@@ -257,13 +252,14 @@ del{
   text-align: center;
 }
 .AddtoCart{
-  padding: 14px 80px;
+  padding: 15.5px 85px;
   background: hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
   border-style: none;
   vertical-align:-9px;
   cursor: pointer;
+  font-size: 18px;
 }
 .AddtoCart img{
   vertical-align: -1px;
@@ -290,6 +286,8 @@ background: hsl(0, 0%, 0%,0.75);
 height: 60%;
 width: 38%;
 margin: 10% auto 0 auto;
+display: flex;
+align-items: center;
 }
 .img-full_light img{
 height: 100%;
@@ -323,11 +321,11 @@ position:absolute;
 }
 .btnNext{
   position:absolute;
-  top: 44.2%;
   left: 66.3%;
   background-color:white;
   padding: 1.6% 2%;
   border-radius: 50%;
+  
 }
 #btnNextOnhover{
   position: absolute;
@@ -337,15 +335,30 @@ position:absolute;
 }
 .btnPrevious{
   position:absolute;
-  top: 44.2%;
   left: 28.5%;
   background-color:white;
   padding: 1.6% 2%;
   border-radius: 50%;
+
+} 
+/* Laptop view  */
+@media screen and (min-width:1280px)and (max-width:1350px){
+  .prod_info{
+    width: 36%; 
+  }
+  .prod_img{
+     margin: 6% 7% 4% 11.5%;
+    height: 60%;
+    width:36%;
+  } 
+  .cartIcon{
+    top: 4.2%;
+  right: 15.5%;
+  }
 }
 
 /* Mobile View */
- @media screen and (min-width:360px) and (max-width:415px){
+ @media screen and (min-width:360px) and (max-width:412px){
   * {
       box-sizing : border-box;
       margin: 0;
@@ -433,9 +446,9 @@ nav ul li {
   border-radius:10px;
   box-shadow: 2px 2px 19px -10px;
   position:absolute;
-  top: 80px;
-  right: 13px;
-   z-index: 1;
+  top: 72px;
+  left: 13px;
+   z-index: 2;
 }
 .cart h3{
   padding:15px;
@@ -487,11 +500,11 @@ nav ul li {
     display:block;
   }
   .img-full-mob{
-    display: block;
-    
+    display: flex;
+    align-items:center;
   }
   .img-full-mob #display_mob{
-    height: 35vh;
+    height: 38vh;
     width:100%;
     margin: 0 auto 0 auto;
   }
@@ -505,19 +518,19 @@ nav ul li {
  
   .btnNextMob{
   position:absolute;
-  top: 24%;
-  left: 84.7%;
+  right: 5%;
   background-color:white;
-  padding: 2% 3.2% 2% 3.7%;;
+  padding: 2% 3.2% 2% 3.2%;;
   border-radius: 50%;
+/*     margin-right: 10px; */
   }
   .btnPreviousMob{
   position:absolute;
-  top: 24%;
   left: 5%;
-  padding: 2% 4.3% 2% 3.3%;
+  padding: 2% 4.3% 2% 3.2%;
     background-color:white;
     border-radius:50%;
+/*      margin-left: 10px; */
   }
   .prod_info{
     height: 100%;
@@ -528,21 +541,25 @@ nav ul li {
   .company_name{
   color: hsl(26, 100%, 55%);
   text-shadow: 5px 5px 5px 5px;
-    margin: -25px 20px 0;
+    margin: -25px 4.2% 0;
+    font-weight:600;
+    font-size: 14px;
 }
  h1{
-  margin: 10px  20px 10px;
+  margin: 10px  4.2% 10px;
   font-weight:900;
   font-size:28px;
+   text-shadow: 5px 5px 5px 5px;
 }
   .prod_info  .paragraph{
   color: hsl(219, 9%, 45%);
     font-size:16px;
   line-height:1.4;
-    padding: 5px 20px 0 20px;
+/*     padding: 5px 20px 0 20px; */
+    margin:4.2%;
 }
 h2{
-  margin: 20px 98px 5px 20px;
+  margin: 20px 0 5px 4.2%;
   font-weight: 700;
   line-height: 1.2;
   font-size:22px;
@@ -557,18 +574,19 @@ h2 span{
   border-radius:5px;
   padding:4px 8px;
   vertical-align:px;
-  margin-left:5px;
+  margin-left:4.2%;
 } 
  del{
+   margin-left: 30.2%;
    font-size:15px;
    vertical-align:2px;
 } 
   .counter{
   background: hsl(223, 64%, 98%);
   border-radius: 8px;
-  width: 330px;
+  width: 91%;
   height:50px;
-  margin:27px 20px 0 20px;
+  margin:27px 4.2% 0 4.2%;
   
 }
   .plus{
@@ -583,20 +601,20 @@ h2 span{
   padding:0 10px;
   background: hsl(223, 64%, 98%);
   vertical-align: -15px;
-  font-size: 17px;
+  font-size: 18px;
   text-shadow: 0 1px black;
 }
   .AddtoCart{
-  padding: 14px 104px;
+  padding: 14px 29%;
   background: hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
   border-style: none;
   vertical-align:-9px;
   cursor: pointer;
-  font-size: 18px;
-  margin: 20px;
-  box-shadow: 2px 6px 5px -3px  hsl(26, 100%, 55%);
+    font-size: 17px;
+    margin: 4.2%;
+    box-shadow: 2px 6px 5px -3px  hsl(26, 100%, 55%);
 } 
 .attribution{
   display: none;
