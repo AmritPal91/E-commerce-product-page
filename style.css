@@ -342,7 +342,7 @@ position:absolute;
 
 } 
 /* Laptop view  */
-@media screen and (min-width:1280px)and (max-width:1350px){
+@media screen and (min-width:1280px)and (max-width:1353px){
   .prod_info{
     width: 36%; 
   }
