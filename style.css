@@ -252,7 +252,7 @@ del{
   text-align: center;
 }
 .AddtoCart{
-  padding: 15.5px 85px;
+  padding: 13px 15%;
   background: hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
@@ -262,8 +262,8 @@ del{
   font-size: 18px;
 }
 .AddtoCart img{
-  vertical-align: -1px;
-  margin-right: 15px;
+  vertical-align: -2px;
+  margin-right: 17px;
   height:15px;
   color:white;
 }
@@ -342,7 +342,7 @@ position:absolute;
 
 } 
 /* Laptop view  */
-@media screen and (min-width:1280px)and (max-width:1353px){
+/* @media screen and (min-width:1280px)and (max-width:1353px){
   .prod_info{
     width: 32%; 
   }
@@ -360,7 +360,7 @@ position:absolute;
   vertical-align:-9px;
   font-size: 16px;
 }
-}
+} */
 
 /* Mobile View */
  @media screen and (min-width:360px) and (max-width:412px){
