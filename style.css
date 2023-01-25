@@ -345,12 +345,12 @@ position:absolute;
 
 } 
 /* Laptop view  */
-/*  @media screen and (min-width:1280px)and (max-width:1353px){
+ @media screen and (min-width:1280px)and (max-width:1353px){
   .cartIcon{
-    top: 5%;
-  right: 16%;
+    top: 4.4%;
+  right: 15.4%;
   } 
-}  */
+} 
 
 /* Mobile View */
  @media screen and (min-width:360px) and (max-width:412px){
