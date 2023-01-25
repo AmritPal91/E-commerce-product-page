@@ -147,7 +147,7 @@ main{
 /*     margin: 10px 0  0 17px ; */
 }
 .thumbnail img:hover{
-  /* border: 2px solid hsl(26, 100%, 55%); */
+  border: 2.5px solid hsl(26, 100%, 55%);
   opacity:0.5;
   cursor: pointer;
 }
@@ -222,13 +222,13 @@ del{
 }
 .cartIcon{
   position: absolute;
-  top: 3.3%;
+  top: 3.4%;
   right: 15.2%;
   padding: 1px 10px;
   background: hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .emptyMsg{
   line-height: 10;
@@ -254,6 +254,7 @@ del{
 .AddtoCart{
   padding: 13px 16%;
   background: hsl(26, 100%, 55%);
+  box-shadow: -1px 13px 20px -7px  hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
   border-style: none;
@@ -307,6 +308,8 @@ width: 100%;
   border-radius: 10%;
 }
 .thumbnail_light img:hover{
+  border: 2.5px solid hsl(26, 100%, 55%);
+/*   background: hsl(223, 64%, 98%,0.50); */
   opacity:0.5;
   cursor: pointer;
 }
@@ -342,25 +345,12 @@ position:absolute;
 
 } 
 /* Laptop view  */
-/* @media screen and (min-width:1280px)and (max-width:1353px){
-  .prod_info{
-    width: 32%; 
-  }
-  .prod_img{
-     margin: 6% 9% 4% 13%;
-    height: 60%;
-    width:34%;
-  } 
+/*  @media screen and (min-width:1280px)and (max-width:1353px){
   .cartIcon{
-    top: 4.2%;
-  right: 15.5%;
+    top: 5%;
+  right: 16%;
   } 
-  .AddtoCart{
-  padding: 12px 70px;
-  vertical-align:-9px;
-  font-size: 16px;
-}
-} */
+}  */
 
 /* Mobile View */
  @media screen and (min-width:360px) and (max-width:412px){
@@ -436,6 +426,9 @@ nav ul li {
   nav ul{
     margin: 80px 15px 0 0;
   }
+   li:after {  
+     display:none;
+   }
 .close-menu{
   position: absolute;
   top: 30px;
@@ -492,13 +485,13 @@ nav ul li {
 }
  .cartIcon{
   position: absolute;
-  top: 1%;
-  right: 16.7%;
+  top: 1.6%;
+  right: 17.4%;
   padding: 1px 8px;
   background: hsl(26, 100%, 55%);
   color:white;
   border-radius:10px;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }  
 /*   Main Section */
   main{
@@ -525,14 +518,20 @@ nav ul li {
   position:absolute;
   right: 5%;
   background-color:white;
-  padding: 2% 3.2% 2% 3.2%;;
+  padding: 2.3% 3.2% 2% 3.7%;;
   border-radius: 50%;
 /*     margin-right: 10px; */
   }
+    .btnNextMob img{
+      height:15px;
+    }
+   .btnPreviousMob img{
+     height:15px;
+   }
   .btnPreviousMob{
   position:absolute;
   left: 5%;
-  padding: 2% 4.3% 2% 3.2%;
+  padding: 2.3% 4.3% 2% 3.2%;
     background-color:white;
     border-radius:50%;
 /*      margin-left: 10px; */
@@ -619,7 +618,7 @@ h2 span{
   cursor: pointer;
     font-size: 17px;
     margin: 4.2%;
-    box-shadow: 2px 6px 5px -3px  hsl(26, 100%, 55%);
+box-shadow: -1px 13px 20px -7px  hsl(26, 100%, 55%);
 } 
 .attribution{
   display: none;
