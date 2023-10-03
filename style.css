@@ -276,9 +276,9 @@ del{
 /* Light Gallery */
 
 .prod_img_light{
-position: absolute;
+position: fixed;
 top: 0px;
-  left: 0px;
+left: 0px;
 height: 100%;
 width: 100%;
 background: hsl(0, 0%, 0%,0.75);
@@ -608,4 +608,10 @@ h2 span{
 .attribution{
   display: none;
 }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+      .prod_img_light{
+     display:none;
+   }
 }
